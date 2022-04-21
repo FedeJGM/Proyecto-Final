@@ -54,7 +54,7 @@ const confirmar = async (req, res) => {
         
     try {
         usuarioConfirmar.token = null;
-        usuarioConfirmar.confirmar = true;
+        usuarioConfirmar.confirmado = true;
 
         await usuarioConfirmar.save();
 
